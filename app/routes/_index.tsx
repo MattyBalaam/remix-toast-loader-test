@@ -14,12 +14,17 @@ export default function Index() {
       <h1 className="text-3xl">Test toasts in loaders</h1>
       <ul>
         <li>
-        <Link to="/route-one">route-one</Link>
+          <Link to="/route-one">route-one via Link  (no toast will show)</Link>
         </li>
         <li>
-        <Link to="/route-two">route-two</Link>
+          <Link to="/route-two">route-two via Link  (no toast will show)</Link>
         </li>
-
+        <li>
+          <a href="/route-one">route-one via anchor</a>
+        </li>
+        <li>
+          <a href="/route-two">route-two via anchor</a>
+        </li>
       </ul>
     </div>
   );
